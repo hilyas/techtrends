@@ -3,7 +3,7 @@ import logging
 
 from datetime import datetime
 
-from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
+from flask import Flask, jsonify, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 
 TOTAL_DB_CONNECTIONS = 0
