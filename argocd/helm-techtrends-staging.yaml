@@ -12,7 +12,7 @@ spec:
     helm:
       valueFiles:
       - values-staging.yaml
-    path: solutions/helm/nginx-deployment
+    path: helm
     repoURL: https://github.com/hilyas/techtrends.git
     targetRevision: HEAD
   syncPolicy: {}
