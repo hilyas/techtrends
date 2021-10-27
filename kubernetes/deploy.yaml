@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-    tag: alpine
+    app: techtrends
   name: techtrends
   namespace: sandbox
 spec:
