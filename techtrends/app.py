@@ -88,7 +88,6 @@ def create():
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
-
         if not title:
             flash('Title is required!')
         else:
@@ -97,10 +96,8 @@ def create():
                          (title, content))
             connection.commit()
             connection.close()
-
             log_print(f"Article '{title}' created!")
             return redirect(url_for('index'))
-
     return render_template('create.html')
 
 # start the application on port 3111
